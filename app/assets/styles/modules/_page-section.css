@@ -2,14 +2,40 @@
     padding: 1.2rem 0;
 
     @mixin atMedium {
-        padding: 1.5rem 0;
+        padding: 1.5rem 0;background-image: url('/home/adam/Dropbox/Learn/GITProjects/travel-site/app/assets/images/testimonials-bg.jpg');
+    }
+    
+    &--no-b-padding-until-medium {
+    	padding-bottom: 0px;
+    	
+    	@mixin atMedium {
+    		padding-bottom: 4.5rem;
+    	}
+    }
+    
+    &--no-b-padding-until-large {
+    	padding-bottom: 0px;
+    	
+    	@mixin atLarge {
+    		padding-bottom: 4.5rem;
+    	}
     }
     
     &--blue {
     background-color: $mainBlue;
     color: aquamarine;
-}
+   }
     
+    &--testimonials {
+        
+        background-color: #e0e6ef;
+        
+        @mixin atLarge {
+	        background-image: url('assets/images/hero--medium.jpg') top center no-repeat;
+	        background-color: bisque;
+	        background-size: cover;
+        }
+    }
 }
 
 
