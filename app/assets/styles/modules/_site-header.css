@@ -1,0 +1,55 @@
+.site-header {
+	padding: 10px;
+	position: absolute; /* allow to overlap with next session */
+	width: 100%;
+	z-index: 2; /*get elelement to front */
+	@mixin atMedium {
+			background-color: rgba($mainBlue, .3); /*require gulp postcss-hexrgba module - see styles.js file in gulp task folder */
+	}
+
+	
+	&__btn-container {
+		float: right;
+	}
+	
+	&__logo {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%) scale(.8);
+		transform-origin: 50% 0%;
+		background-color: $mainBlue;
+		padding: 25px 36px;
+		
+		@mixin atMedium {
+			left: auto;
+			transform: translateX(0);
+		}
+		
+	}
+	
+	&__logo__graphic {
+		text-indent: -9999px;
+	}
+	
+	&__menu-icon {
+		width: 20px;
+		height: 20px;
+		background-color: white;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		@mixin atMedium {
+			display: none;
+		}
+		
+	}
+	
+	
+	&__menu-content {
+		display: none;
+		@mixin atMedium {
+			display: block;
+		}
+	}
+}
