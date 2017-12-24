@@ -2,7 +2,7 @@
 
 
 .icon {
-	background-image: url('/assets/images/sprites/svg/sprite-0f9283b3.svg');	
+	background-image: url('../images/sprites/svg/sprite-0f9283b3.svg');	
 }
 
 .icon--clear-view-escapes {
@@ -98,4 +98,3 @@
     height: 42px;
     background-position: 36.69752421959096% 45.792307692307695%;
 }
-
